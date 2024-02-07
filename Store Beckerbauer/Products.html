@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Creel's Flowers</title>
+	<link type = "text/css" rel = "stylesheet" href = "Store.css">
+	<script type="text/javascript" src = "Products.js"></script>
+</head>
+<body onload = "clearStuff('aboutUsPage'), currentTime()">
+	
+	<div class = "firstBox">
+		
+		<h1 class = "title">Creel's Flowers</h1>
+		
+		<table class = "navBar">
+		
+			<tr>
+		
+				<td class = "navCol" onclick = "clearStuff('aboutUsPage')">About Us</td>
+				
+				<td class = "navCol" onclick = "clearStuff('focalFlowersPage')">Focal Flowers</td>
+
+				<td class = "navCol" onclick = "clearStuff('fillerFlowersPage')">Filler Flowers</td>
+				
+				<td class = "navCol" onclick = "clearStuff('greeneryPage')">Greenery</td>
+				
+				<td class = "navCol" onclick = "clearStuff('lineFlowersPage')">Line Flowers</td>
+				
+				<td class = "navCol" onclick = "clearStuff('hoursAndLocationPage')">Hours and Location</td>
+		
+			</tr>
+		
+		</table>
+		
+		<div class = "cart">
+		
+			<img src = "images/Cart.jpg" class = "cartImageAndText" onclick = "clearStuff('cartPage'), getInformation()" id = "cartImages">
+			
+			<h1 class = "cartImageAndText" id = "cartText" onclick = "clearStuff('cartPage'), getInformation()">#</h1>
+			
+			<h1 class = "cartPrices" id = "cartTotalPrice" onclick = "clearStuff('cartPage'), getInformation()">$0.00</h1>
+			
+			<div id = "clock"></div>
+			
+			<h3 id = "storeDay"></h3>
+		
+		</div>
+		
+		<div class = "secondBox">
+		
+			<div class = "aPage" id = "aboutUsPage">
+			
+				<div>
+				
+				<h1 class = "heading">About Us: </h1>
+				
+				</div>
+				
+				<div>
+				
+					<p class = "aboutUsParagraph">Creel's Flowers was formed in 1943 by Creelisel Thwaite in Ireland. 
+												She was inspired by her friends from her youth noteably dragons. 
+												They all loved the natrual beauty of the world, especially flowers. 
+												Theoradus was the most fond of nature's flowers especially Snapdragons. 
+												When he passed on, Creelisel was very moved and in his memory started this shop, 
+												with the first flower being sold was Snapdragons from Theoradus's garden. Since we first
+												opened, we have grown to be semi-international with branches all over Europe, and America. 
+												Creelisel passed away in 2014, but her business still survives very much to this day. The business
+												is currently in her daughter's hands and we foresee much growth and propsarity of this company. 
+												</p>
+												
+					<p class = "aboutUsParagraphTwo">Currently we sell: </p>
+				
+					<ul class = "aboutUsList">
+				
+						<li>Anemone</li>
+				
+						<li>Baby's Breath</li>
+					
+						<li>Bells of Ireland</li>
+						
+						<li>Carnation</li>
+					
+						<li>Dahlia</li>
+					
+						<li>Dusty Miller</li>
+					
+						<li>Foxglove</li>
+					
+						<li>Gerbera Daisy</li>
+					
+						<li>Gladiolus</li>
+					
+						<li>Hops</li>
+						
+						<li>Lambs Ear</li>
+					
+						<li>Larkspur</li>
+						
+						<li>Liatris</li>
+					
+						<li>Lily of the Incas</li>
+					
+						<li>Lily</li>
+					
+						<li>Orchid</li>
+					
+						<li>Peony</li>
+						
+						<li>Queen Anne's Lace</li>
+					
+						<li>Rose</li>
+					
+						<li>Ruscus</li>
+					
+						<li>Sea Lavender</li>
+					
+						<li>Seeded Eucalyptus</li>
+					
+						<li>Snapdragons</li>
+					
+						<li>Sunflowers</li>
+				
+					</ul>
+				
+				</div>
+				
+			</div>
+			
+			<div class = "aPage" id = "focalFlowersPage">
+			
+				<div>
+				
+				<h1 class = "heading">Focal Flowers: </h1>
+				
+				</div>
+			
+				<div>
+				
+					<img src = "images/Focal Flowers Text Graphic.png" class = "mainImages" id = "mainImage">
+				
+					<h1 class = "text" id = "mainText">Description will be here. Please choose a flower from below.</h1>
+					
+					<h1 class = "prices" id = "mainText">Price</h1>
+					
+					<button onclick = "addToCart()" class = "buttons" id = "addButtons">Add to Cart</button>
+					
+					<button onclick = "removeFromTheCart()" class = "buttons" id = "removeButtons">Remove From The Cart</button>
+				
+				</div>
+			
+				<div class = "options">
+			
+					<img src = "images/Anemone.jpg" class = "sideImage"  id = "0" onclick = "swapImageAndCaption('focalFlowers', 0)">
+				
+					<img src = "images/Dahlia.jpg" class = "sideImage" id = "1" onclick = "swapImageAndCaption('focalFlowers', 1)">
+				
+					<img src = "images/Gerbera Daisy.jpg" class = "sideImage" id = "2" onclick = "swapImageAndCaption('focalFlowers', 2)">
+				
+					<img src = "images/Lily.jpg" class = "sideImage" id = "3" onclick = "swapImageAndCaption('focalFlowers', 3)">
+				
+					<img src = "images/Peony.jpg" class = "sideImage" id = "4" onclick = "swapImageAndCaption('focalFlowers', 4)">
+				
+					<img src = "images/Rose.jpg" class = "sideImage" id = "5" onclick = "swapImageAndCaption('focalFlowers', 5)">
+			
+				</div>
+			
+			</div>
+			
+			<div class = "aPage" id = "fillerFlowersPage">
+			
+				<div>
+				
+				<h1 class = "heading">Filler Flowers: </h1>
+				
+				</div>
+				
+				<div>
+				
+					<img src = "images/Filler Flowers Image.png" class = "mainImages" id = "mainImage">
+				
+					<h1 class = "text" id = "mainCaption">Description will be here. Please choose a flower from below.</h1>
+					
+					<h1 class = "prices" id = "mainText">Price</h1>
+					
+					<button onclick = "addToCart()" class = "buttons" id = "addButtons">Add to Cart</button>
+					
+					<button onclick = "removeFromTheCart()" class = "buttons" id = "removeButtons">Remove From The Cart</button>
+				
+				</div>
+			
+				<div class = "options">
+			
+					<img src = "images/Baby's Breath.jpg" class = "sideImage"  id = "0" onclick = "swapImageAndCaption('fillerFlowers', 0)">
+				
+					<img src = "images/Carnation.jpg" class = "sideImage" id = "1" onclick = "swapImageAndCaption('fillerFlowers', 1)">
+				
+					<img src = "images/Larkspur.jpg" class = "sideImage" id = "2" onclick = "swapImageAndCaption('fillerFlowers', 2)">
+				
+					<img src = "images/Lily of the Incas.jpg" class = "sideImage" id = "3" onclick = "swapImageAndCaption('fillerFlowers', 3)">
+				
+					<img src = "images/Sea Lavender.jpg" class = "sideImage" id = "4" onclick = "swapImageAndCaption('fillerFlowers', 4)">
+				
+					<img src = "images/Snapdragon.jpg" class = "sideImage" id = "5" onclick = "swapImageAndCaption('fillerFlowers', 5)">
+			
+				</div>
+			
+			</div>
+			
+			<div class = "aPage" id = "greeneryPage">
+			
+				<div>
+				
+				<h1 class = "heading">Greenery: </h1>
+				
+				</div>
+				
+				 <div>
+				
+					<img src = "images/Greenery.png" class = "mainImages" id = "mainImage">
+				
+					<h1 class = "text" id = "mainCaption">Description will be here. Please choose a flower from below.</h1>
+					
+					<h1 class = "prices" id = "mainText">Price</h1>
+					
+					<button onclick = "addToCart()" class = "buttons" id = "addButtons">Add to Cart</button>
+					
+					<button onclick = "removeFromTheCart()" class = "buttons" id = "removeButtons">Remove From The Cart</button>
+				
+				</div>
+			
+				<div class = "options">
+			
+					<img src = "images/Bells of Ireland.jpg" class = "sideImage"  id = "0" onclick = "swapImageAndCaption('greenery', 0)">
+				
+					<img src = "images/Dusty Miller.jpg" class = "sideImage" id = "1" onclick = "swapImageAndCaption('greenery', 1)">
+				
+					<img src = "images/Hops.jpg" class = "sideImage" id = "2" onclick = "swapImageAndCaption('greenery', 2)">
+				
+					<img src = "images/Lambs Ear.jpg" class = "sideImage" id = "3" onclick = "swapImageAndCaption('greenery', 3)">
+				
+					<img src = "images/Ruscus.jpg" class = "sideImage" id = "4" onclick = "swapImageAndCaption('greenery', 4)">
+				
+					<img src = "images/Seeded Eucalyptus.jpg" class = "sideImage" id = "5" onclick = "swapImageAndCaption('greenery', 5)">
+			
+				</div>
+			
+			</div>
+			
+			<div class = "aPage" id = "lineFlowersPage">
+			
+				<div>
+				
+				<h1 class = "heading">Line Flowers: </h1>
+				
+				</div>
+				
+				<div>
+				
+					<img src = "images/Line Flowers.png" class = "mainImages" id = "mainImage">
+				
+					<h1 class = "text" id = "mainCaption">Description will be here. Please choose a flower from below.</h1>
+					
+					<h1 class = "prices" id = "mainText">Price</h1>
+					
+					<button onclick = "addToCart()" class = "buttons" id = "addButtons">Add to Cart</button>
+					
+					<button onclick = "removeFromCart()" class = "buttons" id = "removeButtons">Remove From The Cart</button>
+				
+				</div>
+			
+				<div class = "options">
+			
+					<img src = "images/Foxglove.jpg" class = "sideImage"  id = "0" onclick = "swapImageAndCaption('lineFlowers', 0)">
+				
+					<img src = "images/Gladiolus.jpg" class = "sideImage" id = "1" onclick = "swapImageAndCaption('lineFlowers', 1)">
+				
+					<img src = "images/Liatris.jpg" class = "sideImage" id = "2" onclick = "swapImageAndCaption('lineFlowers', 2)">
+				
+					<img src = "images/Orchid.jpg" class = "sideImage" id = "3" onclick = "swapImageAndCaption('lineFlowers', 3)">
+				
+					<img src = "images/Queen Anne's Lace.jpg" class = "sideImage" id = "4" onclick = "swapImageAndCaption('lineFlowers', 4)">
+				
+					<img src = "images/Sunflower.jpg" class = "sideImage" id = "5" onclick = "swapImageAndCaption('lineFlowers', 5)">
+			
+				</div>
+			
+			</div>
+			
+			<div class = "aPage" id = "hoursAndLocationPage">
+			
+				<div>
+				
+					<h1 class = "heading">Hours and Location: </h1>
+				
+				</div>
+				
+				<div>
+				
+					<img src = "images/storefront.jpg" id = "storePicture">
+				
+					<h3 id = "storeOpenOrClosed">Open or Closed</h3>
+					
+					<table class = "hoursTable">
+					
+						<tr class = "hoursRow">
+						
+							<td class = "hoursTableText" id = "makeNothing">Nothing</td>
+							
+							<td class = "hoursTableText">Hours</td>
+						
+						</tr>
+						
+						<tr class = "hoursRow">
+						
+							<td class = "hoursTableText" id = "mondayThruFriday">Monday-Friday</td>
+							
+							<td class = "hoursTableText" id = "mondayThruFriday">8am-8pm</td>
+						
+						</tr>
+						
+						<tr class = "hoursRow">
+						
+							<td class = "hoursTableText" id = "saturdayThruSunday">Saturday-Sunday</td>
+							
+							<td class = "hoursTableText" id = "saturdayThruSunday">Closed</td>
+						
+						</tr>
+					
+					</table>
+					
+					<h3 class = "locationsList">We have locations at: </h3>
+					
+					<ul class = "locationItems">
+					
+						<li>Galway, Ireland</li>
+						
+						<li>Liverpool, United Kingdom</li>
+						
+						<li>Vienna, Austria</li>
+						
+						<li>Bern, Switzerland</li>
+						
+						<li>Stuttgart, Germany</li>
+						
+						<li>Paris, France</li>
+						
+						<li>Rome, Italy</li>
+						
+						<li>Madrid, Spain</li>
+						
+						<li>Warsaw, Poland</li>
+						
+						<li>London, United Kingdom</li>
+					
+					</ul>
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4965.601936443641!2d-0.1461698353274218!3d51.51686737461164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad574cf496f%3A0x382799688ddaa96e!2s324%20Regent%20St%2C%20Marylebone%2C%20London%20W1B%203BJ%2C%20UK!5e0!3m2!1sen!2sus!4v1607306169613!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class = "map"></iframe>
+				
+				</div>
+			
+			</div>
+			
+			<div class = "aPage" id = "cartPage">
+			
+				<div>
+				
+				<h1 class = "heading">Cart: </h1>
+				
+				</div>
+				
+				<div class = "tableForCart">
+				
+					<table class = "cartTable">
+					
+						<tr class = "aRow" id = "anemoneRow">
+							
+							<td class = "cartImag"><img src = "images/Anemone.jpg" class = "cartImage" id = "anemoneImage"></td>
+							
+							<td class = "cartPrice" id = "anemonePrice">Anemone Price</td>
+							
+							<td class = "cartQuantity" id = "anemoneQuantity">Anemone Quantity</td>
+							
+							<td class = "cartLineTotal" id = "anemoneTotal">Anemone Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('anemoneImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('anemoneImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "babysBreathRow">
+							
+							<td class = "cartImag"><img src = "images/Baby's Breath.jpg" class = "cartImage" id = "babysBreathImage"></td>
+							
+							<td class = "cartPrice" id = "babysBreathPrice">Baby's Breath Price</td>
+							
+							<td class = "cartQuantity" id = "babysBreathQuantity">Baby's Breath Quantity</td>
+							
+							<td class = "cartLineTotal" id = "babysBreathTotal">Baby's Breath Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('babysBreathImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('babysBreathImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "bellsOfIrelandRow">
+							
+							<td class = "cartImag"><img src = "images/Bells of Ireland.jpg" class = "cartImage" id = "bellsOfIrelandImage"></td>
+							
+							<td class = "cartPrice" id = "bellsOfIrelandPrice">Bells of Ireland Price</td>
+							
+							<td class = "cartQuantity" id = "bellsOfIrelandQuantity">Bells of Ireland Quantity</td>
+							
+							<td class = "cartLineTotal" id = "bellsOfIrelandTotal">Bells of Ireland Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('bellsOfIrelandImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('bellsOfIrelandImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "carnationRow">
+							
+							<td class = "cartImag"><img src = "images/Carnation.jpg" class = "cartImage" id = "carnationImage"></td>
+					
+							<td class = "cartPrice" id = carnationPrice>Carnation Price</td>
+							
+							<td class = "cartQuantity" id = "carnationQuantity">Carnation Quantity</td>
+							
+							<td class = "cartLineTotal" id = "carnationTotal">Carnation Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('carnationImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('carnationImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "dahliaRow">
+							
+							<td class = "cartImag"><img src = "images/Dahlia.jpg" class = "cartImage" id = "dahliaImage"></td>
+							
+							<td class = "cartPrice" id = "dahliaPrice">Dahlia Price</td>
+							
+							<td class = "cartQuantity" id = "dahliaQuantity">Dahlia Quantity</td>
+							
+							<td class = "cartLineTotal" id = "dahliaTotal">Dahlia Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('dahliaImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('dahliaImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "dustyMillerRow">
+							
+							<td class = "cartImag"><img src = "images/Dusty Miller.jpg" class = "cartImage" id = "dustyMillerImage"></td>
+							
+							<td class = "cartPrice" id = "dustyMillerPrice">Dusty Miller Price</td>
+							
+							<td class = "cartQuantity" id = "dustyMillerQuantity">Dusty Miller Quantity</td>
+							
+							<td class = "cartLineTotal" id = "dustyMillerTotal">Dusty Miller Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('dustyMillerImage'), getInformation()">Add Another</button></td>
+						
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('dustyMillerImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "foxgloveRow">
+							
+							<td class = "cartImag"><img src = "images/Foxglove.jpg" class = "cartImage" id = "foxgloveImage"></td>
+							
+							<td class = "cartPrice" id = "foxglovePrice">Foxglove Price</td>
+							
+							<td class = "cartQuantity" id = "foxgloveQuantity">Foxglove Quantity</td>
+							
+							<td class = "cartLineTotal" id = "foxgloveTotal">Foxglove Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('foxgloveImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('foxgloveImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "gerberaDaisyRow">
+							
+							<td class = "cartImag"><img src = "images/Gerbera Daisy.jpg" class = "cartImage" id = "gerberaDaisyImage"></td>
+							
+							<td class = "cartPrice" id = "gerberaDaisyPrice">Gerbera Daisy Price</td>
+							
+							<td class = "cartQuantity" id = "gerberaDaisyQuantity">Gerbera Daisy Quantity</td>
+							
+							<td class = "cartLineTotal" id = "gerberaDaisyTotal">Gerbera Daisy Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('gerberaDaisyImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('gerberaDaisyImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "gladiolusRow">
+							
+							<td class = "cartImag"><img src = "images/Gladiolus.jpg" class = "cartImage" id = "gladiolusImage"></td>
+							
+							<td class = "cartPrice" id = "gladiolusPrice">Gladiolus Price</td>
+							
+							<td class = "cartQuantity" id = "gladiolusQuantity">Gladiolus Quantity</td>
+							
+							<td class = "cartLineTotal" id = "gladiolusTotal">Gladiolus Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('gladiolusImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('gladiolusImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "hopsRow">
+							
+							<td class = "cartImag"><img src = "images/Hops.jpg" class = "cartImage" id = "hopsImage"></td>
+							
+							<td class = "cartPrice" id = "hopsPrice">Hops Price</td>
+							
+							<td class = "cartQuantity" id = "hopsQuantity">Hops Quantity</td>
+							
+							<td class = "cartLineTotal" id = "hopsTotal">Hops Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('hopsImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('hopsImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "lambsEarRow">
+							
+							<td class = "cartImag"><img src = "images/Lambs Ear.jpg" class = "cartImage" id = "lambsEarImage"></td>
+							
+							<td class = "cartPrice" id = "lambsEarPrice">Lambs Ear Price</td>
+							
+							<td class = "cartQuantity" id = "lambsEarQuantity">Lambs Ear Quantity</td>
+							
+							<td class = "cartLineTotal" id = "lambsEarTotal">Lambs Ear Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('lambsEarImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('lambsEarImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "larkspurRow">
+							
+							<td class = "cartImag"><img src = "images/Larkspur.jpg" class = "cartImage" id = "larkspurImage"></td>
+							
+							<td class = "cartPrice" id = "larkspurPrice">Larkspur Price</td>
+							
+							<td class = "cartQuantity" id = "larkspurQuantity">Larkspur Quantity</td>
+							
+							<td class = "cartLineTotal" id = "larkspurTotal">Larkspur Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('larkspurImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('larkspurImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "liatrisRow">
+							
+							<td class = "cartImag"><img src = "images/Liatris.jpg" class = "cartImage" id = "liatrisImage"></td>
+							
+							<td class = "cartPrice" id = "liatrisPrice">Liatris Price</td>
+							
+							<td class = "cartQuantity" id = "liatrisQuantity">Liatris Quantity</td>
+							
+							<td class = "cartLineTotal" id = "liatrisTotal">Liatris Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('liatrisImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('liatrisImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "lilyOfTheIncasRow">
+							
+							<td class = "cartImag"><img src = "images/Lily of the Incas.jpg" class = "cartImage" id = "lilyOfTheIncasImage"></td>
+							
+							<td class = "cartPrice" id = "lilyOfTheIncasPrice">Lily of the Incas Price</td>
+							
+							<td class = "cartQuantity" id = "lilyOfTheIncasQuantity">Lily of the Incas Quantity</td>
+							
+							<td class = "cartLineTotal" id = "lilyOfTheIncasTotal">Lily of the Incas Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('lilyOfTheIncasImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('lilyOfTheIncasImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "lilyRow">
+							
+							<td class = "cartImag"><img src = "images/Lily.jpg" class = "cartImage" id = "lilyImage"></td>
+							
+							<td class = "cartPrice" id = "lilyPrice">Lily Price</td>
+							
+							<td class = "cartQuantity" id = "lilyQuantity">Lily Quantity</td>
+							
+							<td class = "cartLineTotal" id = "lilyTotal">Lily Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('lilyImage'), getInformation()">Add Another</button></td>
+						
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('lilyImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "orchidRow">
+							
+							<td class = "cartImag"><img src = "images/Orchid.jpg" class = "cartImage" id = "orchidImage"></td>
+							
+							<td class = "cartPrice" id = "orchidPrice">Orchid Price</td>
+							
+							<td class = "cartQuantity" id = "orchidQuantity">Orchid Quantity</td>
+							
+							<td class = "cartLineTotal" id = "orchidTotal">Orchid Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('orchidImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('orchidImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "peonyRow">
+							
+							<td class = "cartImag"><img src = "images/Peony.jpg" class = "cartImage" id = "peonyImage"></td>
+							
+							<td class = "cartPrice" id = "peonyPrice">Peony Price</td>
+							
+							<td class = "cartQuantity" id = "peonyQuantity">Peony Quantity</td>
+							
+							<td class = "cartLineTotal" id = "peonyTotal">Peony Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('peonyImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('peonyImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "queenAnnesLaceRow">
+							
+							<td class = "cartImag"><img src = "images/Queen Anne's Lace.jpg" class = "cartImage" id = "queenAnnesLaceImage"></td>
+							
+							<td class = "cartPrice" id = "queenAnnesLacePrice">Queen Anne's Lace Price</td>
+							
+							<td class = "cartQuantity" id = "queenAnnesLaceQuantity">Queen Anne's Lace Quantity</td>
+							
+							<td class = "cartLineTotal" id = "queenAnnesLaceTotal">Queen Anne's Lace Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('queenAnnesLaceImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('queenAnnesLaceImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "roseRow">
+							
+							<td class = "cartImag"><img src = "images/Rose.jpg" class = "cartImage" id = "roseImage"></td>
+							
+							<td class = "cartPrice" id = "rosePrice">Rose Price</td>
+							
+							<td class = "cartQuantity" id = "roseQuantity">Rose Quantity</td>
+							
+							<td class = "cartLineTotal" id = "roseTotal">Rose Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('roseImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('roseImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "ruscusRow">
+							
+							<td class = "cartImag"><img src = "images/Ruscus.jpg" class = "cartImage" id = "ruscusImage"></td>
+							
+							<td class = "cartPrice" id = "ruscusPrice">Ruscus Price</td>
+							
+							<td class = "cartQuantity" id = "ruscusQuantity">Ruscus Quantity</td>
+							
+							<td class = "cartLineTotal" id = "ruscusTotal">Ruscus Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('ruscusImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('ruscusImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "seaLavenderRow">
+							
+							<td class = "cartImag"><img src = "images/Sea Lavender.jpg" class = "cartImage" id = "seaLavenderImage"></td>
+							
+							<td class = "cartPrice" id = "seaLavenderPrice">Sea Lavender Price</td>
+							
+							<td class = "cartQuantity" id = "seaLavenderQuantity">Sea Lavender Quantity</td>
+							
+							<td class = "cartLineTotal" id = "seaLavenderTotal">Sea Lavender Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('seaLavenderImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('seaLavenderImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "seededEucalyptusRow">
+							
+							<td class = "cartImag"><img src = "images/Seeded Eucalyptus.jpg" class = "cartImage" id = "seededEucalyptusImage"></td>
+							
+							<td class = "cartPrice" id = "seededEucalyptusPrice">Seeded Eucalyptus Price</td>
+							
+							<td class = "cartQuantity" id = "seededEucalyptusQuantity">Seeded Eucalyptus Quantity</td>
+							
+							<td class = "cartLineTotal" id = "seededEucalyptusTotal">Seeded Eucalyptus Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('seededEucalyptusImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('seededEucalyptusImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "snapdragonRow">
+							
+							<td class = "cartImag"><img src = "images/Snapdragon.jpg" class = "cartImage" id = "snapdragonImage"></td>
+							
+							<td class = "cartPrice" id = "snapdragonPrice">Snapdragon Price</td>
+							
+							<td class = "cartQuantity" id = "snapdragonQuantity">Snapdragon Quantity</td>
+							
+							<td class = "cartLineTotal" id = "snapdragonTotal">Snapdragon Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('snapdragonImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('snapdragonImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "sunflowerRow">
+							
+							<td class = "cartImag"><img src = "images/Sunflower.jpg" class = "cartImage" id = "sunflowerImage"></td>
+							
+							<td class = "cartPrice" id = "sunflowerPrice">Sunflower Price</td>
+							
+							<td class = "cartQuantity" id = "sunflowerQuantity">Sunflower Quantity</td>
+							
+							<td class = "cartLineTotal" id = "sunflowerTotal">Sunflower Total</td>
+							
+							<td><button class = "cartAddButton" onclick = "addFromCartToCart('sunflowerImage'), getInformation()">Add Another</button></td>
+							
+							<td><button class = "cartRemoveButton" onclick = "removeFromCartFromCart('sunflowerImage'), getInformation()">Remove One</button></td>
+						
+						</tr>
+						
+						<tr class = "aRow" id = "totalRow">
+						
+						<td></td>
+						
+						<td></td>
+						
+						<td></td>
+						
+						<td class = "cartLineTotal" id = "totalForCart">Total</td>
+						
+						<td><button class = "cartAddButton" onclick = "clearCart()">Purchase Items</button></td>
+						
+						<td class = "cartLineTotal"></td>
+						
+						</tr>
+					
+					</table>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</body>
+</html>

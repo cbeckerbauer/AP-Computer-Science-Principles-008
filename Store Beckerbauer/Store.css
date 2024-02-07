@@ -1,0 +1,276 @@
+body{
+	background-color: #3b083a;
+}
+
+.firstBox{
+	background-color: #f2d8f2;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 3px solid #b31aff;
+}
+
+.title{
+	font-size: 18mm;
+	text-align: center;
+	font-family: fantasy;
+}
+
+.secondBox{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	border: 3px solid #d93bd6;
+}
+
+.navBar{
+	margin-left: 5px;
+	margin-bottom: -18px;
+	margin-top: -25px;
+	border-collapse: collapse;
+}
+
+.navCol{
+	border: 3px solid #d93bd6;
+	font-size: 24px;
+	padding: 10px;
+	font-family: fantasy;
+	background-color: #deb8de;
+}
+
+.cart{
+	float: right;
+	margin-top: -175px;
+	margin-right: 5px;
+}
+
+#cartImages{
+	width: 75px;
+	height: 75px;
+	background-color: #f2d8f2;
+	margin-top: 0px;
+	margin-right: 5px;
+}
+
+.cartImageAndText{
+	display: inline-block;
+	float: right;
+}
+
+#cartText{
+	font-family: fantasy;
+	font-size: 30px;
+	margin-right: -60px;
+	margin-top: 12px;
+}
+
+.cartPrices{
+	font-family: fantasy;
+	font-size: 30px;
+	float: right;
+	margin-right: -75px;
+	margin-top: 75px;
+}
+
+.mainImages{
+	margin-left: 475px;
+	height: 300px;
+	width: 300px;
+	margin-top: 15px;
+	border-radius: 30%;
+	border: 3px solid #d93bd6;
+}
+
+.heading{
+	font-size: 45px;
+	margin-left: 15px;
+	font-family: fantasy;
+	width: 450px;
+}
+
+.prices{
+	float: right;
+	margin-right: 135px;
+}
+
+#mainText{
+	font-size: 30px;
+	font-family: fantasy;
+	display: inline-block;
+}
+
+.text{
+	margin-left: 135px;
+	margin-right: 0px;
+}
+
+.options{
+	margin-left: 135px;
+}
+
+.sideImage{
+	height: 150px;
+	width: 150px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 30%;
+	border: 3px solid #d93bd6;
+}
+
+.buttons{
+	display: inline-block;
+	background-color: #cc99ff;
+	border: 3px solid #d93bd6
+}
+
+#addButtons{
+	font-family: fantasy;
+	font-size: 18px;
+	margin-left: 135px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#removeButtons{
+	font-family: fantasy;
+	font-size: 18px;
+	margin-left: 0px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.cartImage{
+	height: 100px;
+	width: 100px;
+	border: 3px solid #d93bd6;
+}
+
+.tableForCart{
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+.cartImag{
+	padding: 15px;
+}
+
+.cartPrice{
+	font-family: fantasy;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.cartQuantity{
+	font-family: fantasy;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.cartLineTotal{
+	font-family: fantasy;
+	font-size: 18px;
+	padding: 15px;
+}
+
+.cartAddButton{
+	font-family: fantasy;
+	font-size: 18px;
+	border: 3px solid #d93bd6;
+	background-color: #cc99ff;
+	margin-left: 15px;
+}
+
+.cartRemoveButton{
+	font-family: fantasy;
+	font-size: 18px;
+	border: 3px solid #d93bd6;
+	background-color: #cc99ff;
+	margin-left: 15px;
+}
+
+.aboutUsList{
+	font-family: fantasy;
+	font-size: 30px;
+	margin-left: 30px;
+	margin-top: -20px;
+}
+
+.aboutUsParagraph{
+	font-family: fantasy;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+.aboutUsParagraphTwo{
+	font-family: fantasy;
+	font-size: 38px;
+	margin-left: 15px;
+	margin-top: 25px;
+}
+
+.locationsList{
+	font-family: fantasy;
+	font-size: 38px;
+	margin-top: 280px;
+	margin-left: 30px;
+}
+
+.locationItems{
+	font-family: fantasy;
+	font-size: 30px;
+	margin-left: 35px;
+	margin-top: -30px;
+}
+
+#storePicture{
+	height: 450px;
+	width: 450px;
+	float: left;
+	margin-left: 30px;
+}
+
+.hoursTable{
+	margin-left: 610px;
+	font-family: fantasy;
+	font-size: 30px;
+	border-collapse: collapse;
+}
+
+#storeOpenOrClosed{
+	margin-left: 610px;
+	font-family: fantasy;
+	font-size: 35px;
+}
+
+.hoursTableText{
+	padding: 10px;
+	border: 3px solid #d93bd6;
+}
+
+.map{
+	float: right;
+	margin-top: -430px;
+	margin-right: 250px;
+}
+
+#clock{
+	margin-top: 115px;
+	font-family: fantasy;
+	font-size: 30px;
+}
+
+#storeDay{
+	margin-top: 0px;
+	font-family: fantasy;
+	font-size: 30px;
+	float: right;
+	margin-right: 0px;
+}
+
+#makeNothing{
+	color: #f2d8f2;
+}
